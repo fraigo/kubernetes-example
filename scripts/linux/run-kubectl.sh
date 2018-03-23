@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# minikube/kubectl run script
+# based on https://github.com/kubernetes/minikube/blob/v0.25.2/README.md
+
 ./install_minikube.sh
 ./install_kubectl.sh
 
