@@ -3,7 +3,7 @@
 # kubectl installing script
 # based on https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
-if [ -e /usr/local/bin/kubectl ]; then
+if [ ! -e /usr/local/bin/kubectl ]; then
 
     #Get current version of kubectl
     export KUBECTL_VER=$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)
